@@ -175,3 +175,46 @@ footer p {
     font-style: italic;
     font-size: 16px;
 }
+
+.photo img {
+    width: 120px;
+}
+
+.photo figure {
+    width: 160px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border-bottom: 1px solid black;
+}
+
+.backlink {
+    text-decoration: none;
+    color: blue;
+    margin-left: 15px;
+}
+
+.description {
+    margin-left: 15px;
+}
+
+.description h3 {
+    font-size: 24px;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.description h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
