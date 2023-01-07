@@ -57,7 +57,7 @@ nav {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 5vh;
+    height: 10vh;
     background-color: #3f3f3f;
     display: flex;
     align-items: center;
@@ -68,6 +68,16 @@ nav ul {
     flex-direction: row;
 }
 
+nav ul li {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+nav ul li:hover {
+    background-color: black;
+}
+
+
 nav ul li a{
     padding-left: 30px;
     padding-right: 30px;
@@ -76,7 +86,11 @@ nav ul li a{
 }
 
 main {
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #FCF6F5FF;
 }
 
 main h1 {
@@ -86,13 +100,18 @@ main h1 {
 }
 
 main figure img {
-    width: 400px;
+    width: 300px;
     margin-bottom: 10px;
     display: inline-block;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 main figure {
-    border: 1px solid black;
+    border: 1px solid gray;
+    border-radius: 5px;
     width: 450px;
     padding: 10px 0;
     margin-right: 15px;
@@ -111,9 +130,8 @@ main figure {
 }
 
 footer {
-    margin-top: 5vh;
     width: 100%;
-    height: 5vh;
+    height: 10vh;
     background-color: #3f3f3f;
     display: flex;
     align-items: center;
@@ -133,6 +151,7 @@ footer p {
     display: flex;
     flex-direction: row;
     margin-left: 15px;
+    padding-right: 30px;
     padding-left: 30px;
     margin-bottom: 50px;
     padding-top: 30px;
@@ -202,8 +221,20 @@ footer p {
     margin-left: 15px;
 }
 
+.contact form{
+    margin-left: 32vw;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.contact iframe {
+    margin-left: 29vw;
+}
+
 .description {
     margin-left: 15px;
+    width: 70vw;
+    margin-left: 200px;
 }
 
 .description h3 {
@@ -307,3 +338,76 @@ main .content {
     width: 600px;
     float: left;
 }
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li {
+        width: 100%;
+        height: 1vh;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        background-color: gray;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    main {
+        margin-top: 18vh;
+    }
+    .figure-container {
+        flex-direction: column;
+    }
+    .figure-container figure {
+        height: 32vh;
+        width: 96%;
+        margin-bottom: 2vh;
+    }
+    .thumbnail {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .thumbnail img {
+        margin-bottom: 2vh;
+        width: 100%;
+        height: 25vh;
+    }
+    .thumbnail-description h3 {
+        margin-bottom: 2vh;
+    } 
+    .contact iframe {
+        width: 99vw;
+        margin-left: 0;
+    }
+    .contact form {
+        width: 100%;
+        margin-left: 0;
+    }
+    .video video {
+        width: 95vw;
+        margin-right: 0;
+    }
+    main .content {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+    .grid-container {
+        grid-template-columns: auto auto;
+        padding-left: 0;
+        height: auto;
+        row-gap: 5vh;
+    }
+    .gallery-card img {
+        width: 100px;
+        height: 75px;
+    }
+    .gallery-card figure {
+        width: 110px;
+    }
+  }
